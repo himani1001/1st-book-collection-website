@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT ME</title>
+    <style>
+        body {
+            background-color: rgb(251, 250, 250);
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .nav-bar li {
+            margin: 0 180px;
+            font-size: 2.5em;
+        }
+
+        .nav-bar li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav-bar li a:hover {
+            color: rgb(177, 102, 115);
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-info {
+            background-color:rgb(220, 156, 165);
+            padding: 150px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        h2{
+            font-size: 4.5em;
+        }
+
+        p{
+            text-align: center;
+            margin: 0 1000px;
+            padding: 0 550px;
+            font-size: 2.5em;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            width: 100%;
+            padding: 40px;
+            font-size: 2em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea::placeholder{
+            font-size: 2em; /* Adjust font size as needed */
+        }
+
+
+        input::placeholder{
+            font-size: 1.3em; /* Set the font size of the placeholder */
+        }
+
+        button {
+            padding: 20px 30px;
+            font-size: 2em;
+            background-color: rgb(177, 102, 115);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"] {
+            margin-top: 50px; /* Add margin to the top of the button */
+        }
+
+        button:hover {
+            background-color: rgb(145, 70, 83);
+        }
+
+        footer {
+            background-color: rgb(245, 188, 197);
+            /* padding: 20px; */
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .coll1,
+        .coll2,
+        .coll3 {
+            flex: 1; /* Each column takes equal space */
+            text-align: center; /* Center content horizontally */
+        }
+
+        .coll1 img,
+        .coll2 img {
+            height: 75px;
+            padding: 0 10px;
+        }
+
+        .coll1 h1,
+        .coll2 h1,
+        .coll2 a,
+        .coll3 h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .coll3 img {
+            width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <a href="#" class="logo">
+                <img src="home_img/output-onlinegiftools.gif" alt="brand">
+            </a>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="Books.html">BOOKS</a></li>
+                    <li><a href="ContactMe.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact-section">
+        <h2>CONTACT ME</h2>
+        <p>PLEASE FEEL FREE TO GIVE A FEEDBACK ON THE SITE AND MESSAGE ME ANYTIME. I WOULD LOVE TO TALK TO PEOPLE WHO ARE INTERESTED IN READING NOVELS BUT IF YOU WANT TO TALK ABOUT SOMETHING ELSE THEN YOU CAN DO THAT TOO.<br> MY HUMBLE REQUEST BE GRATEFUL!.</p>
+        <div class="contact-info">
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" id="firstname" placeholder="e.g. Lavi">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" placeholder="e.g. Sharma">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" placeholder="name@example.com">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" placeholder="Type your message here"></textarea>
+                </div>
+                <br>
+                <button class="contact-submit-button" id="submitButton" type="submit" onclick="sendMessage()" aria-controls = "submitMessage">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+    <script src = "ContactMe.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="coll1">
+                <h1>CONNECT WITH ME</h1>
+                <a href="https://www.instagram.com/elbook01/?next=%2F" target="_blank" class="insta-handle" rel="noopener noreferrer"><img src="footer_img/instaIcon (2).png" alt=""></a>
+                <a href="https://www.goodreads.com/user/show/149333952?ref=nav_profile_l" target="_blank" rel="noopener noreferrer"><img src="footer_img/goodreads_icon_137540.png" alt=""></a>
+                <a href="https://open.spotify.com/user/ec1wy3ga1fw86eoyhwwu9ymvw?si=afbb8e08ebb54c1c" target="_blank" rel="noopener noreferrer"><img src="footer_img/saavn.png" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=61556339263205" target="_blank" rel="noopener noreferrer"><img src="footer_img/facebook.png" alt=""></a>
+            </div>
+            <div class="coll2">
+                <h1>SITEMAP</h1>
+                <ul class="go-through">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="Books.html">BOOKS</a></li>
+                    <li><a href="ContactMe.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+            <div class="coll3">
+                <img src="home_img/output-onlinegiftools.gif" alt="brand">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>MY TOP READ</title>
+    <style>
+        body {
+            background-color: rgb(251, 250, 250);
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar li {
+            margin: 0 180px;
+            font-size: 2.5em;
+        }
+
+        .nav-bar li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav-bar li a:hover {
+            color: rgb(177, 102, 115);
+        }
+
+        h1{
+            text-align: center;
+            font-size: 4.5em;
+        }
+
+        section p, li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 2.5em;
+        }
+
+footer {
+            background-color: rgb(245, 188, 197);
+            /* padding: 20px;
+            margin-top: 50px; */
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .coll1,
+        .coll2,
+        .coll3 {
+            flex: 1; /* Each column takes equal space */
+            text-align: center; /* Center content horizontally */
+        }
+
+        .coll1 img,
+        .coll2 img {
+            height: 75px;
+            padding: 0 10px;
+        }
+
+        .coll1 h1,
+        .coll2 h1{
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .coll2 a,
+        .coll3 h1 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .coll3 img {
+            width: 50%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-bar li {
+                margin: 10px 0;
+            }
+
+            .footer-container {
+                flex-direction: column;
+            }
+
+            .coll1, .coll2, .coll3 {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper logo-header">
+            <a href="#" class="logo">
+                <img src="home_img/output-onlinegiftools.gif" alt="brand">
+            </a>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="Books.html">BOOKS</a></li>
+                    <li><a href="ContactMe.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="my-top-read">
+            <h1>MY TOP READS</h1>
+            <p>These are the books I hope to buy one day from my first salary and are really close to my heart(2019-2024).</p>
+            <ul>
+                <li>Ugly Love by Colleen Hoover</li>
+                <br>
+                <li>The Love Hypothesis by Ali Hazelwood</li>
+                <br>
+                <li>Punk 57 by Penelope Douglas</li>
+                <br>
+                <li>The Score (Off-Campus #3) by Elle Kennedy</li>
+                <br>
+                <li>The Fine Print (Dreamland Billionaire #1) by Lauren Asher</li>
+                <br>
+                <li>Paint It All Red (Mindf*ck #5) by S.T. Abby</li>
+                <br>
+                <li>Vow of Deception (Deception Trilogy #1) by Rina Kent</li>
+                <br>
+                <li>Twisted Emotions (The Camorra Chronicles #2) by Cora Reilly</li>
+                <br>
+                <li>Mr. Masters (Mr. Series #1) by T.L. Swan</li>
+                <br>
+                <li>Egomaniac by Vi Keeland</li>
+                <br>
+                <li>Reminders of Him by Colleen Hoover</li>
+                <br>
+                <li>Empire of Lust (Empire #4) by Rina Kent</li>
+                <br>
+                <li>Red, White & Royal Blue by Casey McQuiston</li>
+                <br>
+                <li>The Spy (Kingmakers #4) by Sophie Lark</li>
+                <br>
+                <li>It Happened One Summer (Bellinger Sisters #1) by Tessa Bailey</li>
+                <br>
+                <li>Filthy Secret (The Five Points Mob Collection #6) by Serena Akeroyd</li>
+                <br>
+                <li>Moonstruck (Necessary Evils #3) by Onley James</li>
+                <br>
+                <li>You & Me by Tal Bauer</li>
+                <br>
+                <li>The Rest of the Story by Tal Bauer</li>
+                <br>
+                <li>The Right Thing to Do (Rights and Wrongs #1) by Lovesbitca8</li>
+                <br>
+                <li>The Wrong Things (Rights and Wrongs #3) by Lovesbitca8</li>
+                <br>
+                <li>Fourth Wing (The Empyrean #1) by Rebecca Yarros</li>
+                <br>
+                <li>Iron Flame (The Empyrean #2) by Rebecca Yarros</li>
+                <br>
+                <li>Stolen Hearts (Dark Hearts #5) by Jagger Cole</li>
+                <br>
+                <li>The Endgame (Atlanta Lightning #1) by Riley Hart</li>
+                <br>
+                <li>Secrets of a Billionaire (Billionaire Kings #3) by Eva Winners</li>
+                <br>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="coll1">
+                <h1>CONNECT WITH ME</h1>
+                <a href="https://www.instagram.com/elbook01/?next=%2F" target="_blank" class="insta-handle" rel="noopener noreferrer"><img src="footer_img/instaIcon (2).png" alt="Instagram"></a>
+                <a href="https://www.goodreads.com/user/show/149333952?ref=nav_profile_l" target="_blank" rel="noopener noreferrer"><img src="footer_img/goodreads_icon_137540.png" alt="Goodreads"></a>
+                <a href="https://open.spotify.com/user/ec1wy3ga1fw86eoyhwwu9ymvw?si=afbb8e08ebb54c1c" target="_blank" rel="noopener noreferrer"><img src="footer_img/saavn.png" alt="Spotify"></a>
+                <a href="https://www.facebook.com/profile.php?id=61556339263205" target="_blank" rel="noopener noreferrer"><img src="footer_img/facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="coll2">
+                <h1>SITEMAP</h1>
+                <ul class="go-through">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="Books.html">BOOKS</a></li>
+                    <li><a href="ContactMe.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+            <div class="coll3">
+                <img src="home_img/output-onlinegiftools.gif" alt="brand">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

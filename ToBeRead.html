@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/toBeRead.css">
+    <title>To Be Read</title>
+    <style>
+        body {
+            background-color: rgb(251, 250, 250);
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar li {
+            margin: 0 180px;
+            font-size: 2.5em;
+        }
+
+        .nav-bar li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav-bar li a:hover {
+            color: rgb(177, 102, 115);
+        }
+
+        h1{
+            text-align: center;
+            font-size: 4.5em;
+        }
+
+        main{
+            text-align: center;
+        }
+
+        main p, li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 2.5em;
+        }
+
+        main h2{
+            font-size: 3.5em;
+        }
+
+footer {
+            background-color: rgb(245, 188, 197);
+            /* padding: 10px;
+            margin-top: 20px; */
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .coll1,
+        .coll2,
+        .coll3 {
+            flex: 1; /* Each column takes equal space */
+            text-align: center; /* Center content horizontally */
+        }
+
+        .coll1 img,
+        .coll2 img {
+            height: 75px;
+            padding: 0 10px;
+        }
+
+        .coll1 h1,
+        .coll2 h1{
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .coll2 a,
+        .coll3 h1 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .coll3 img {
+            width: 50%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-bar li {
+                margin: 10px 0;
+            }
+
+            .footer-container {
+                flex-direction: column;
+            }
+
+            .coll1, .coll2, .coll3 {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper logo-header">
+            <a href="#" class = "logo">
+                <img src="home_img/output-onlinegiftools.gif" alt="brand">
+            </a>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="Books.html">BOOKS</a></li>
+                    <li><a href="ContactMe.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>MY TO BE READ</h1>
+        <p>THESE ARE THE BOOKS THAT I HAVE COLLECTED AND STILL COLLECTING. <br> I KNOW THE LIST IS TOO LONG BUT I CAN'T DO ANYTHING, THERE ARE SO MANY BEAUTIES AND IT'S HABITUAL THAT YOU WILL GET DISTRACTED NOW OR AT SOME POINT.</p>
+        <h2>RECENT TO OLD</h2>
+        <ul class="recent-to-old">
+            <li>THE END ZONE(ATLANTA LIGHTNING #2) BY RILEY HART</li><br>
+            <li>FALL WITH ME(PLAYING FOR KEEPS #4) BY BECKA MACK</li><br>
+            <li>PUCKING WILD(JACKSONVILLE RAYS #2) BY EMILY RATH</li><br>
+            <li>THE PRODIGAL(THE HANDS OF THE POTTERS #4) BY KRISTY MARIE</li><br>
+            <li>SINNERS ATONE(SINNERS ANONYMOUS #4) BY SOMME SKETCHER</li><br>
+            <li>THE PENALTY SHOT(TOTALLY PUCKED #5) BY MAREN MOORE</li><br>
+            <li>BY FRENZY I RUIN(SINS OF THE FATHERS #5) BY CORA REILLY</li><br>
+            <li>SURVIVING THE BREAK(CHADWICK #2) BY C.P. HARRIS</li><br>
+        </ul>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="coll1">
+                <h1>CONNECT WITH ME</h1>
+                <a href="https://www.instagram.com/elbook01/?next=%2F" target="_blank" class="insta-handle" rel="noopener noreferrer"><img src="footer_img/instaIcon (2).png" alt="Instagram"></a>
+                <a href="https://www.goodreads.com/user/show/149333952?ref=nav_profile_l" target="_blank" rel="noopener noreferrer"><img src="footer_img/goodreads_icon_137540.png" alt="Goodreads"></a>
+                <a href="https://open.spotify.com/user/ec1wy3ga1fw86eoyhwwu9ymvw?si=afbb8e08ebb54c1c" target="_blank" rel="noopener noreferrer"><img src="footer_img/saavn.png" alt="Spotify"></a>
+                <a href="https://www.facebook.com/profile.php?id=61556339263205" target="_blank" rel="noopener noreferrer"><img src="footer_img/facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="coll2">
+                <h1>SITEMAP</h1>
+                <ul class="go-through">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="Books.html">BOOKS</a></li>
+                    <li><a href="ContactMe.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+            <div class="coll3">
+                <img src="home_img/output-onlinegiftools.gif" alt="brand">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
