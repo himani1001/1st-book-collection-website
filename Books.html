@@ -41,118 +41,79 @@
 
         .books {
             display: flex;
-            flex-direction: column; /* Arrange items in a column */
-            align-items: center; /* Center items horizontally */
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            width: 100%; /* Adjust width as needed */
-            max-width: 500px; /* Set a maximum width if desired */
-            margin: 0 auto; /* This centers the element horizontally */
+            width: 100%;
+            margin: 0 auto;
         }
 
-        .books h2 {
+        .books h1, h2, h3 {
             font-size: 3em;
             font-family: Arial, sans-serif;
-            margin-bottom: 20px;
+            margin: 40px 0px 30px;
         }
 
         .books-container {
             display: flex;
-            flex-direction: column; /* Arrange items in a column */
-            align-items: center; /* Center items horizontally */
-            gap: 20px; /* Adjust spacing between book rows */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 2200px;
         }
 
-        .row {
+        .book-item {
             display: flex;
-            justify-content: center; /* Center items horizontally */
-            gap: 30px; /* Adjust spacing between books */
-            height: 1350px; /* Set a fixed height for the container */
+            flex-direction: column;
+            align-items: center;
+            width: 600px;
         }
 
-        /* Adjust the height of the book containers */
-        .col1,
-        .col2,
-        .col3,
-        .col4,
-        .col5,
-        .col6,
-        .col7,
-        .col8,
-        .col9,
-        .col10 {
-            height: 1250px; /* Set a fixed height for the containers */
+        .book-item img {
+            width: 100%;
+            height: 1000px;
+            object-fit: cover;
         }
 
-        /* Set a fixed height for the images to maintain consistency */
-        .col1 img,
-        .col2 img,
-        .col3 img,
-        .col4 img,
-        .col5 img,
-        .col6 img,
-        .col7 img,
-        .col8 img,
-        .col9 img,
-        .col10 img {
-            width: auto;
-            height: 100%; /* Ensure images fill their containers */
+        .book-item h3 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 2.8em;
         }
 
-        /* Adjust the margin of the headings to align them properly */
-        .col1 h2,
-        .col2 h2,
-        .col3 h2,
-        .col4 h2,
-        .col5 h2,
-        .col6 h2,
-        .col7 h2,
-        .col8 h2,
-        .col9 h2,
-        .col10 h2 {
-            margin-top: 10px; /* Remove the margin */
-            margin-bottom: 10px; /* Add margin at the bottom */
-        }
-
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             .books-container {
-                flex-direction: row; /* On larger screens, arrange books in a row */
-                flex-wrap: wrap; /* Allow books to wrap to the next row */
+                flex-direction: column;
+                align-items: center;
             }
 
-            .row {
-                flex: 0 1 calc(33.33% - 20px); /* Each row takes up 33.33% of the container's width minus the gap */
+            .book-item {
+                width: 80%;
             }
         }
-
 
         footer {
             background-color: rgb(245, 188, 197);
-            /* padding: 20px; */
         }
 
         .footer-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 20px;
         }
 
-        .coll1,
-        .coll2,
-        .coll3 {
-            flex: 1; /* Each column takes equal space */
-            text-align: center; /* Center content horizontally */
+        .coll1, .coll2, .coll3 {
+            flex: 1;
+            text-align: center;
         }
 
-        .coll1 img,
-        .coll2 img {
+        .coll1 img, .coll2 img {
             height: 75px;
             padding: 0 10px;
         }
 
-        .coll1 h1,
-        .coll2 h1,
-        .coll2 a,
-        .coll3 h1 {
+        .coll1 h1, .coll2 h1, .coll2 a, .coll3 h1 {
             font-size: 3em;
             margin: 0;
         }
@@ -166,12 +127,12 @@
 <body>
     <header>
         <div class="wrapper logo-header">
-            <a href="#" class = "logo">
+            <a href="#" class="logo">
                 <img src="home_img/output-onlinegiftools.gif" alt="brand">
             </a>
             <nav>
                 <ul class="nav-bar">
-                    <li><a href="home.html">HOME</a></li><!--using # nothing happen after clickinng on home and other options-->
+                    <li><a href="home.html">HOME</a></li>
                     <li><a href="aboutMe.html">ABOUT ME</a></li>
                     <li><a href="Books.html">BOOKS</a></li>
                     <li><a href="ContactMe.html">CONTACT ME</a></li>
@@ -183,151 +144,136 @@
     <main>
         <section>
             <div class="books">
-                <h2>BOOKS</h2>
+                <h1>BOOKS</h1>
                 <h2>JANUARY</h2>
                 <div class="books-container">
-                    <div class="row">
-                        <div class="col1">
-                            <a">
-                                <img src="Books_img/january/that_one_night.jpg" alt="">
-                                <h2>THAT ONE NIGHT</h2>
-                            </a>
-                        </div>
-                        <div class="col2">
-                            <a">
-                                <img src="Books_img/january/pucking_around.jpg" alt="">
-                                <h2>PUCKING AROUND</h2>
-                            </a>
-                        </div>
-                        <div class="col3">
-                            <a>
-                                <img src="Books_img/january/hope_on_the_rocks.jpg" alt="">
-                                <h2>HOPE ON THE ROCKS</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/january/that_one_night.jpg" alt="">
+                            <h3>THAT ONE NIGHT</h3>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col4">
-                            <a>
-                                <img src="Books_img/january/daddy_christmas.jpg" alt="">
-                                <h2>DADDY CHRISTMAS</h2>
-                            </a>
-                        </div>
-                        <div class="col5">
-                            <a>
-                                <img src="Books_img/january/only_for_tonight.jpg" alt="">
-                                <h2>ONLY FOR TONIGHT</h2>
-                            </a>
-                        </div>
-                        <div class="col6">
-                            <a>
-                                <img src="Books_img/january/rough_around_the_edges.jpg" alt="">
-                                <h2>ROUGH AROUND EDGES</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/january/pucking_around.jpg" alt="">
+                            <h3>PUCKING AROUND</h3>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col7">
-                            <a>
-                                <img src="Books_img/january/take_me_away_bike.jpg" alt="">
-                                <h2>TAKE ME AWAY BIKER</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/january/hope_on_the_rocks.jpg" alt="">
+                            <h3>HOPE ON THE ROCKS</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/january/daddy_christmas.jpg" alt="">
+                            <h3>DADDY CHRISTMAS</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/january/only_for_tonight.jpg" alt="">
+                            <h3>ONLY FOR TONIGHT</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/january/rough_around_the_edges.jpg" alt="">
+                            <h3>ROUGH AROUND EDGES</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/january/take_me_away_bike.jpg" alt="">
+                            <h3>TAKE ME AWAY BIKER</h3>
+                        </a>
                     </div>
                 </div>
+
                 <h2>FEBRUARY</h2>
                 <div class="books-container">
-                    <div class="row">
-                        <div class="col1">
-                            <a>
-                                <img src="Books_img/february/pretty_rings_and_broken_things.jpg" alt="">
-                                <h2>PRETTY RINGS & BROKEN THINGS</h2>
-                            </a>
-                        </div>
-                        <div class="col2">
-                            <a>
-                                <img src="Books_img/february/sweetest_deception.jpg" alt="">
-                                <h2>SWEETEST DECEPTION</h2>
-                            </a>
-                        </div>
-                        <div class="col3">
-                            <a>
-                                <img src="Books_img/february/bitter_deception.jpg" alt="">
-                                <h2>BITTER DECEPTION</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/pretty_rings_and_broken_things.jpg" alt="">
+                            <h3>PRETTY RINGS & BROKEN THINGS</h3>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col4">
-                            <a>
-                                <img src="Books_img/february/pucked.jpg" alt="">
-                                <h2>PUCKED</h2>
-                            </a>
-                        </div>
-                        <div class="col5">
-                            <a>
-                                <img src="Books_img/february/the_bratva's_locked_up_love.jpg" alt="">
-                                <h2>THE BRATVA'S LOCKED UP LOVE</h2>
-                            </a>
-                        </div>
-                        <div class="col6">
-                            <a>
-                                <img src="Books_img/february/toxic_love.jpg" alt="">
-                                <h2>TOXIC LOVE</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/sweetest_deception.jpg" alt="">
+                            <h3>SWEETEST DECEPTION</h3>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col7">
-                            <a>
-                                <img src="Books_img/february/the_good_side_of_wrong.jpg" alt="">
-                                <h2>THE GOOD SIDE OF WRONG</h2>
-                            </a>
-                        </div>
-                        <div class="col8">
-                            <a>
-                                <img src="Books_img/february/devious_vow.jpg" alt="">
-                                <h2>DEVIOUS VOW</h2>
-                            </a>
-                        </div>
-                        <div class="col9">
-                            <a>
-                                <img src="Books_img/february/love_contract.jpg" alt="">
-                                <h2>LOVE CONTRACT</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/bitter_deception.jpg" alt="">
+                            <h3>BITTER DECEPTION</h3>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col10">
-                            <a>
-                                <img src="Books_img/february/unravel_me.jpg" alt="">
-                                <h2>UNRAVEL ME</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/pucked.jpg" alt="">
+                            <h3>PUCKED</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/the_bratva's_locked_up_love.jpg" alt="">
+                            <h3>THE BRATVA'S LOCKED UP LOVE</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/toxic_love.jpg" alt="">
+                            <h3>TOXIC LOVE</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/the_good_side_of_wrong.jpg" alt="">
+                            <h3>THE GOOD SIDE OF WRONG</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/devious_vow.jpg" alt="">
+                            <h3>DEVIOUS VOW</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/love_contract.jpg" alt="">
+                            <h3>LOVE CONTRACT</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/february/unravel_me.jpg" alt="">
+                            <h3>UNRAVEL ME</h3>
+                        </a>
                     </div>
                 </div>
 
                 <h2>MARCH</h2>
                 <div class="books-container">
-                    <div class="row">
-                        <div class="col1">
-                            <a>
-                                <img src="Books_img/march/pretty_boy.jpg" alt="">
-                                <h2>PRETTY BOY</h2>
-                            </a>
-                        </div>
-                        <div class="col2">
-                            <a>
-                                <img src="Books_img/march/his_perfect_gift.jpg" alt="">
-                                <h2>HIS CRISTMAS GIFT</h2>
-                            </a>
-                        </div>
-                        <div class="col3">
-                            <a>
-                                <img src="Books_img/march/daddy's_addiction.jpg" alt="">
-                                <h2>DADDY'S ADDICTION</h2>
-                            </a>
-                        </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/march/pretty_boy.jpg" alt="">
+                            <h3>PRETTY BOY</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/march/his_perfect_gift.jpg" alt="">
+                            <h3>HIS CHRISTMAS GIFT</h3>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a>
+                            <img src="Books_img/march/daddy's_addiction.jpg" alt="">
+                            <h3>DADDY'S ADDICTION</h3>
+                        </a>
                     </div>
                 </div>
             </div>
