@@ -1,3 +1,6 @@
+This is what I had in in mind while I was making this website.
+![Screenshot 2024-07-08 144614](https://github.com/himani1001/Blog/assets/96700396/4ddcc1d8-56c1-486b-8f5e-ae08811477b0)
+
 ![Screenshot 2024-07-08 143933](https://github.com/himani1001/Blog/assets/96700396/6bb75014-97df-48ca-a5bc-5ba428a6b8eb)
 ![Screenshot 2024-07-08 143951](https://github.com/himani1001/Blog/assets/96700396/a0b68f81-9e49-48a2-a740-4f1b11df48d5)
 ![Screenshot 2024-07-07 115003](https://github.com/himani1001/Blog/assets/96700396/dcdfb4f9-1758-4326-8668-e5532140442d)
